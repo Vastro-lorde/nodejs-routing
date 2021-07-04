@@ -13,19 +13,19 @@ const server = http.createServer((Request, Response)  =>{
                 })
                 
     }    
-    else if (Request.url === '/index.html') {
+    else if (Request.url === '/index') {
             Response.setHeader('Content-Type', 'text/html');
             fs.readFile('./pages/index.html', (err,data)=>{
             Response.end(data);
             })
         }
-    else if (Request.url === '/contact.html') {
+    else if (Request.url === '/contact') {
             Response.setHeader('Content-Type', 'text/html');
             fs.readFile('./pages/contact.html', (err,data)=>{
             Response.end(data);
             })
         }
-    else if (Request.url === '/about.html') {
+    else if (Request.url === '/about' || Request.url === '/about-us') {
             Response.setHeader('Content-Type', 'text/html');
             fs.readFile('./pages/about.html', (err,data)=>{
                 Response.end(data);
