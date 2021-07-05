@@ -15,12 +15,6 @@ const server = http.createServer((Request, Response)  =>{
                 })
                 
     }    
-    else if (Request.url === '/home') {
-            Response.setHeader('Content-Type', 'text/html');
-            fs.readFile('./pages/index.html', (err,data)=>{
-            Response.end(data);
-            })
-        }
     else if (Request.url === '/contact') {
             Response.setHeader('Content-Type', 'text/html');
             fs.readFile('./pages/contact.html', (err,data)=>{
