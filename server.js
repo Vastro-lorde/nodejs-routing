@@ -6,6 +6,8 @@ const port = 3000;
 
 const server = http.createServer((Request, Response)  =>{
     Response.statusCode = 200;
+    
+
     if (Request.url === '/') {
         Response.setHeader('Content-Type', 'text/html');
                 fs.readFile('./pages/index.html', (err,data)=>{
@@ -13,7 +15,7 @@ const server = http.createServer((Request, Response)  =>{
                 })
                 
     }    
-    else if (Request.url === '/index') {
+    else if (Request.url === '/home') {
             Response.setHeader('Content-Type', 'text/html');
             fs.readFile('./pages/index.html', (err,data)=>{
             Response.end(data);
