@@ -1,0 +1,19 @@
+{
+  "name": "servercreation",
+  "version": "1.0.0",
+  "description": "simple nodejs server creation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vastro-lorde/nodejs-routing.git"
+  },
+  "author": "Seun Daniel Omatsola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vastro-lorde/nodejs-routing/issues"
+  },
+  "homepage": "https://github.com/Vastro-lorde/nodejs-routing#readme"
+}

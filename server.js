@@ -7,7 +7,7 @@ const port = 3000;
 const server = http.createServer((Request, Response)  =>{
     Response.statusCode = 200;
     
-
+    if (Request.url === '/about-us'){ Request.url === '/about'}
     if (Request.url === '/') {
         Response.setHeader('Content-Type', 'text/html');
                 fs.readFile('./pages/index.html', (err,data)=>{
@@ -21,7 +21,7 @@ const server = http.createServer((Request, Response)  =>{
             Response.end(data);
             })
         }
-    else if (Request.url === '/about' || Request.url === '/about-us') {
+    else if (Request.url === '/about') {
             Response.setHeader('Content-Type', 'text/html');
             fs.readFile('./pages/about.html', (err,data)=>{
                 Response.end(data);
